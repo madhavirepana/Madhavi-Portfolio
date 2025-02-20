@@ -1,0 +1,28 @@
+{% include home.html %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Portfolio</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    {% block content %}
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" contact-left">
+            <div class="contact-left-title">
+                <h2>Get in touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="85343d17-96d2-4ab4-9782-3eb7787a0d21">
+            <input type="text" name="name" placeholder="your name" class="contact-inputs" required>
+            <input type="text" name="email" placeholder="your email" class="contact-inputs" required>
+            <input type="text" name="message" placeholder="your message" class="contact-inputs" required>
+            <button type="submit">submit</button>
+        </form>
+        <p>&copy; 2024 Madhavi. All rights reserved.</p>
+    </div>
+    {% endblock %}
+</body>
+<script>

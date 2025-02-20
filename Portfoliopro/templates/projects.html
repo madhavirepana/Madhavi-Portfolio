@@ -1,0 +1,63 @@
+{% include home.html %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+    {% block content %}
+    <!-- <header>
+        <h1>My Projects</h1>
+    </header>
+     -->
+        <section class="projects">
+            <h1>My Projects</h1>
+            <div class="project-list">
+                <!-- Project 1 -->
+                <div class="project-item">
+                    <img src="images/screenshot1.png" alt="Project 1 Screenshot">
+                    <!-- <h2>Currency Converter</h2>
+                    <p>Short description of the project. Highlight features or technologies used.</p> -->
+                    <a href="https://github.com/madhavirepana/python-projects.git" target="_blank">View on GitHub</a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-item">
+                    <img src="images/screenshot2.png" alt="Project 2 Screenshot">
+                    <!-- <h2>Project Title 2</h2>
+                    <p>Short description of the project. Highlight features or technologies used.</p> -->
+                    <a href="https://github.com/madhavirepana/ATS_E-commerce-website.git" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-item">
+                    <img src="project2.jpg" alt="Project 2 Screenshot">
+                    <!-- <h2>Project Title 2</h2>
+                    <p>Short description of the project. Highlight features or technologies used.</p> -->
+                    <a href="https://github.com/madhavirepana/Django-projects.git" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-item">
+                    <img src="project2.jpg" alt="Project 2 Screenshot">
+                    <!-- <h2>Project Title 2</h2>
+                    <p>Short description of the project. Highlight features or technologies used.</p> -->
+                    <a href="https://github.com/madhavirepana/JS-projects.git" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-item">
+                    <img src="project2.jpg" alt="Project 2 Screenshot">
+                    <!-- <h2>Project Title 2</h2>
+                    <p>Short description of the project. Highlight features or technologies used.</p> -->
+                    <a href="" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-item">
+                    <img src="project2.jpg" alt="Project 2 Screenshot">
+                    <!-- <h2>Project Title 2</h2>
+                    <p>Short description of the project. Highlight features or technologies used.</p> -->
+                    <a href="" target="_blank">View on GitHub</a>
+                </div>
+
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+  {% endblock %}
+</body>
+</html>

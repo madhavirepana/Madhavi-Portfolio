@@ -1,0 +1,167 @@
+/* Basic Styles for Resume Section */
+#resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #3791be;
+    min-height: 100vh; /* Ensure full height to center content */
+}
+
+/* A4 Paper Size */
+.resume-container {
+    width: 210mm; /* A4 width */
+    height: auto;
+    padding: 20mm; /* Margin for content */
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+.resume-page {
+    width: 210mm; /* A4 Width */
+    padding: 20mm; /* Content Padding */
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    page-break-after: always; /* Ensure it breaks to the next page for printing */
+    display: block;
+}
+.resume-pages .resume-page:not(:last-child) {
+    margin-bottom: 50px; /* Space between the pages */
+}
+
+/* Header */
+.resume-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.resume-header h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    color: #333;
+    color: red;
+}
+
+.resume-header p {
+    color: #777;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/* Resume Body */
+.resume-body {
+    margin-top: 20px;
+}
+.underline {
+    height: 2px; /* Adjust the height as needed */
+    background-color: rgba(44, 190, 203, 0.801);
+   
+}
+
+
+.resume-body h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.resume-body ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.resume-body ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+ul li::before { 
+    content: '•';
+    margin-right: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+    color: rgba(47, 82, 222, 0.89);;
+}
+
+table td {
+    background-color: #fafafa;
+}
+
+/* Page Break */
+.page-break {
+    page-break-before: always;
+    margin-top: 30px;
+}
+
+/* Space Between Pages - Adds some margin to simulate spacing between pages */
+.page-spacing {
+    margin-top: 50px; /* Add 50px or adjust as needed */
+}
+
+/* Footer */
+.resume-footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Prevent multiple cards, force content into a single "card" */
+.resume-container {
+    display: block;
+}
+
+
+.signature { 
+    text-align: right; 
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+h4,h5 {
+    color: rgba(47, 82, 222, 0.89);
+    font-size: 15px;
+}
+@media print {
+    .resume-container {
+        width: 210mm;
+        height: auto;
+        padding: 10mm;
+        box-shadow: none;
+        background-color: white;
+    }
+
+    body {
+        background-color: white;
+        margin: 0;
+    }
+
+    #resume {
+        padding: 0;
+        background-color: white;
+    }
+
+    .page-break {
+        page-break-before: always;
+    }
+
+    /* Add space between the pages when printing */
+    .page-spacing {
+        margin-top: 50mm; /* Adjust this value as needed */
+    }
+}

@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="css/about.css">
+
+    <script>
+        function opentab(tabName) {
+            let tabContents = document.querySelectorAll('.tab-contents');
+            tabContents.forEach(tab => tab.classList.remove('active-tab'));
+            let tabLinks = document.querySelectorAll('.tab-links');
+            tabLinks.forEach(link => link.classList.remove('active-link'));
+            document.getElementById(tabName).classList.add('active-tab');
+            event.currentTarget.classList.add('active-link');
+        }
+    </script>
+    
+</head>
+<body>
+    {% block content %}
+    <div class="container">
+        <div class="row1">
+            <img src="images/img5.jpg" alt="">
+
+        </div>
+        <div class="row2">
+
+            <h1>About Me</h1>
+            <p>Overall 6 months of experience as a python developer from AaramIT solutions and 6 months as process executive in startek company</p>
+            <div class="tab-titles">
+                <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                <div class="tab-links" onclick="opentab('education')">Education</div>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Operating Systems</span><br>Windows</li>
+                    <li><span>Programming language</span><br>Python</li>
+                    <li><span>Database</span><br>MySQL</li>
+                    <li><span>Frontend technologies</span><br>HTML,CSS,Bootstrap</li>
+                    <li><span>Framework</span><br>Django</li>
+                    <li><span>Other Skills</span><br>GitHub</li>
+                    <li><span>Environment</span><br>VS Code,IDLE</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <!-- <li><span>2023 - 2024</span><br>Python Devloper at Aaram IT Solution</li> -->
+                    <li><span>2023 - 2024</span><br>Python Developer Intern at AaaramIT Solutions</li>
+                    <li><span>2023 - 2024</span><br>Process Executive at startek</li>
+
+                   
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2023-2025</span><br>Persueing MCA from VRN college</li>
+                    <li><span>2020-2023</span><br>Degree (BSc Computers) from Sri Shirdi Sai Womens Degree College</li>
+                    <li><span>2018-2020</span><br>Intermediate from Prathibha Junior College</li>
+                    <li><span>2018</span><br>SSC from Grandevandlapalli High School</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    
+    <script>
+        function opentab(tabName) {
+            let tabContents = document.querySelectorAll('.tab-contents');
+            tabContents.forEach(tab => tab.classList.remove('active-tab'));
+            let tabLinks = document.querySelectorAll('.tab-links');
+            tabLinks.forEach(link => link.classList.remove('active-link'));
+            document.getElementById(tabName).classList.add('active-tab');
+            event.currentTarget.classList.add('active-link');
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+  <header> 
+    <nav>
+      <ul>
+        <li><a href="home.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="contact.html">Get in touch</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <img src="./images/img6.jpg" alt="">
+        <h2>Hi!</h2>
+        <h1>I am Madhavi Repana<span>Python Developer</span></h1>
+        <!-- <img src="https://th.bing.com/th/id/OIP.l_FyCBFkiIyv6p-xf-4KhgHaEk?rs=1&pid=ImgDetMain" class="circular-image" alt="Profile Picture"> -->
+        <img src="https://img.freepik.com/premium-photo/hands-businessman-typing-laptop-modern-office-with-smart-phone-digital-tablet-computer_103164-901.jpg?w=826" class="circular-image" alt="Profile Picture">
+        
+
+        <div class="skills">
+            <span>Python</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Bootstrap</span>
+            <span>MySQL</span>
+            <span>Django</span>
+        </div>
+    </section>
+  </main>
+
+<!-- -----------------------------------about.html------------------------------- -->
+  <div class="container">
+    <div class="row1">
+        <img src="images/img5.jpg" alt="">
+
+    </div>
+    <div class="row2">
+
+        <h1>About Me</h1>
+        <p>Overall 6 months of experience as a python developer from AaramIT solutions and 6 months as process executive in startek company</p>
+        <div class="tab-titles">
+            <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+            <div class="tab-links" onclick="opentab('experience')">Experience</div>
+            <div class="tab-links" onclick="opentab('education')">Education</div>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>Operating Systems</span><br>Windows</li>
+                <li><span>Programming language</span><br>Python</li>
+                <li><span>Database</span><br>MySQL</li>
+                <li><span>Frontend technologies</span><br>HTML,CSS,Bootstrap</li>
+                <li><span>Framework</span><br>Django</li>
+                <li><span>Other Skills</span><br>GitHub</li>
+                <li><span>Environment</span><br>VS Code,IDLE</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+            <ul>
+                <!-- <li><span>2023 - 2024</span><br>Python Devloper at Aaram IT Solution</li> -->
+                <li><span>2023 - 2024</span><br>Python Developer Intern at AaaramIT Solutions</li>
+                <li><span>2023 - 2024</span><br>Process Executive at startek</li>
+
+               
+            </ul>
+        </div>
+        <div class="tab-contents" id="education">
+            <ul>
+                <li><span>2023-2025</span><br>Persueing MCA from VRN college</li>
+                <li><span>2020-2023</span><br>Degree (BSc Computers) from Sri Shirdi Sai Womens Degree College</li>
+                <li><span>2018-2020</span><br>Intermediate from Prathibha Junior College</li>
+                <li><span>2018</span><br>SSC from Grandevandlapalli High School</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- ------------------------------------------------projects.html---------------------------------------------- -->
+<div class="container2">
+<section class="projects">
+  <h1>My Projects</h1>
+  <div class="project-list">
+      <!-- Project 1 -->
+      <div class="project-item">
+          <img src="images/screenshot1.png" alt="Project 1 Screenshot">
+          <!-- <h2>Currency Converter</h2>
+          <p>Short description of the project. Highlight features or technologies used.</p> -->
+          <a href="https://github.com/madhavirepana/python-projects.git" target="_blank">View on GitHub</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-item">
+          <img src="images/screenshot2.png" alt="Project 2 Screenshot">
+          <!-- <h2>Project Title 2</h2>
+          <p>Short description of the project. Highlight features or technologies used.</p> -->
+          <a href="https://github.com/madhavirepana/ATS_E-commerce-website.git" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-item">
+          <img src="project2.jpg" alt="Project 2 Screenshot">
+          <h2>Project Title 2</h2>
+          <p>Short description of the project. Highlight features or technologies used.</p>
+          <a href="https://github.com/username/project2" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-item">
+          <img src="project2.jpg" alt="Project 2 Screenshot">
+          <h2>Project Title 2</h2>
+          <p>Short description of the project. Highlight features or technologies used.</p>
+          <a href="https://github.com/username/project2" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-item">
+          <img src="project2.jpg" alt="Project 2 Screenshot">
+          <h2>Project Title 2</h2>
+          <p>Short description of the project. Highlight features or technologies used.</p>
+          <a href="https://github.com/username/project2" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-item">
+          <img src="project2.jpg" alt="Project 2 Screenshot">
+          <h2>Project Title 2</h2>
+          <p>Short description of the project. Highlight features or technologies used.</p>
+          <a href="https://github.com/username/project2" target="_blank">View on GitHub</a>
+      </div>
+
+      <!-- Add more projects as needed -->
+  </div>
+</section>
+</div>
+
+<!-- ---------------------------------------------------------contact.html----------------------------------------- -->
+<div class="contact-container">
+    <form action="https://api.web3forms.com/submit" method="POST" contact-left">
+        <div class="contact-left-title">
+            <h2>Get in touch</h2>
+            <hr>
+        </div>
+        <input type="hidden" name="access_key" value="85343d17-96d2-4ab4-9782-3eb7787a0d21">
+        <input type="text" name="name" placeholder="your name" class="contact-inputs" required>
+        <input type="text" name="email" placeholder="your email" class="contact-inputs" required>
+        <input type="text" name="message" placeholder="your message" class="contact-inputs" required>
+        <button type="submit">submit</button>
+    </form>
+    <p class="copyright">&copy; 2024 Madhavi. All rights reserved.</p>
+</div>
+ </body>
+ 
+ </html>

@@ -1,0 +1,94 @@
+
+.container {
+    width: 100%;
+    position: relative; 
+    background-image: url(../images/img10.jpg);
+    background-size: cover; 
+    background-position: center; 
+    min-height: 100vh; 
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.container .row1 {
+    width: 300px;
+    margin-top: 60px;
+    margin-left: 50px;
+    
+
+}
+
+.container .row1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+.row2 {
+    margin-left:100px;
+    h1 {
+        align-items: center;
+        color: black;
+        margin-top: 70px;
+    }
+}
+.tab-titles{
+    display: flex;
+    margin: 30px 0 40px;
+    color: black;
+    
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    color: red;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: green;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transform: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 100%;
+}
+.tab-contents ul{
+    border-radius: 10px;
+    box-shadow: 0px 0px 500px -10px rgb(166, 206, 224);
+    padding:  15px;
+    /* background-image: linear-gradient(45deg,transparent,rgb(92, 58, 132), rgb(26, 107, 142) ); */
+    background-image: linear-gradient(45deg,transparent,rgb(92, 58, 132), rgb(26, 107, 142) );
+
+
+}
+.tab-contents ul li{
+    list-style:circle;
+    margin: 12px;
+    color: blue;
+    font-size: 14px;
+    letter-spacing: 1px;
+    
+}
+.tab-contents ul li span{
+    color: maroon;
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    line-height: 1.5;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block ;
+}
